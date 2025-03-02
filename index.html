@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV-Board</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+    .poppins{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }    
+
+
+    </style>
+</head>
+<body class="poppins">
+    <div class="navbar bg-base-100 shadow-sm mt-2 mx-auto">
+        <div class="flex-1">
+          <div class="flex">
+          <img src="assets/logo.png" alt="">    
+          <a class="btn btn-ghost text-xl poppins ">Dev<span class="poppins text-2xl font-bold">Board</span></a>
+          </div>
+        </div>
+        <div class="flex">
+            <div class="flex justify-center items-center w-[123px] h-[64px]  rounded-[32px] bg-[#afbde3]">
+            <div><img src="assets/checkbox.png" alt=""></div>
+            <div class="font-bold text-2xl">23</div>
+                
+
+            </div>
+            <!-- bedir ceharar div nicer ta -->
+          <div class="dropdown dropdown-end"> 
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------- -->
+    <div class="flex gap-10">
+      <div class="container  mt-8 p-6 bg-white rounded-lg ">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center bg-[#F4F7FF] px-7 py-7 rounded-md">
+                <div class="bg-[#afbde3] p-2 rounded-xl mr-4">
+                    <img src="assets/checkbox.png" alt="Task Icon" class="w-6 h-6">
+                </div>
+                <div>
+                    <div class="text-lg font-semibold">Task Assigned</div>
+                    <div id="Assigned" class="ml-2 text-2xl font-bold">06</div>
+                </div>
+                
+            </div>
+    <button id="notun-page" class="bg-gradient-to-r from-[#9BA8F8] to-[#3752FD] px-28 py-10 rounded-lg flex items-center hover:scale-105 "
+     
+    role="button" 
+    aria-label="Discover Something New Today">
+    
+    <img src="assets/board.png" alt="" class="w-10 h-10 mr-3">
+    
+    <div class="text-black font-bold text-lg leading-tight">
+        <div class="text-white">Discover Something</div>
+        <div class="text-white">New Today!</div>
+    </div>
+</button>
+
+            <div class="bg-[#f0f2f5] py-8 px-4 rounded-lg flex items-center gap-4 ">
+                <div>
+                    <img src="assets/calender.png" alt="">
+                </div>
+                <div>
+                    <div class="text-center font-semibold text-sm">Wed,</div>
+                <div class="text-center font-bold text-lg">Jul 28 2025</div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="grid grid-cols-3 gap-4 ">
+            <div class="border rounded-lg p-4 bg-[#F4F7FF]">
+                <div class="font-bold bg-[#ffffff] p-1 w-24 text-center rounded-md">ShopEase</div>
+                <div class="text-lg font-semibold text-[#00303C] my-3">Fix Mobile Button Issue</div>
+                <div class="text-sm text-gray-600 py-6 text-center w-72 bg-white">Debug using Chrome DevTools,<br>check for overlapping...</div>
+                <div class="mt-4 flex justify-between items-center">
+                    <div class="text-sm">Deadline<br>21 March 2025</div>
+                    <div>
+                        <button id="comp" class="bg-[#3752FD] hover:bg-[#000000] text-white py-1 px-3 rounded-full text-xs font-semibold" 
+                          onclick="console.log('Button clicked!')">
+                          Completed
+                        </button>
+                      </div>                </div>
+            </div>
+            <div class="border rounded-lg p-4 bg-[#F4F7FF]">
+                <div class="font-bold bg-[#ffffff] p-1 w-24 text-center rounded-md">CloudSync</div>
+                <div class="text-lg font-semibold text-[#00303C] my-3">Add Dark Mode</div>
+                <div class="text-sm text-gray-600 py-6 text-center w-72 bg-white">Store the user's preference in localStorage, update CSS...</div>
+                <div class="mt-4 flex justify-between items-center">
+                    <div class="text-sm">Deadline<br>21 March 2025</div>
+                    <div>
+                        <button id="comp" class="bg-[#3752FD] hover:bg-[#000000] text-white py-1 px-3 rounded-full text-xs font-semibold" 
+                          onclick="console.log('Button clicked!')">
+                          Completed
+                        </button>
+                      </div>                </div>
+            </div>
+            <div class="border rounded-lg p-4 bg-[#F4F7FF]">
+                <div class="font-bold bg-[#ffffff] p-1 w-24 text-center rounded-md">SwiftPay</div>
+                <div class="text-lg font-semibold text-[#00303C] my-3">Optimize Home page</div>
+                <div class="text-sm text-gray-600 py-6 text-center w-72 bg-white">Debug using Chrome DevTools, check for overlapping...</div>
+                <div class="mt-4 flex justify-between items-center">
+                    <div class="text-sm">Deadline<br>21 March 2025</div>
+                    <div>
+                        <button id="comp" class="bg-[#3752FD] hover:bg-[#000000] text-white py-1 px-3 rounded-full text-xs font-semibold" 
+                          onclick="console.log('Button clicked!')">
+                          Completed
+                        </button>
+                      </div>                
+                </div>
+            </div>
+            <div class="border rounded-lg p-4 bg-[#F4F7FF]">
+                <div class="font-bold bg-[#ffffff] p-1 w-24 text-center rounded-md">Meta</div>
+                <div class="text-lg font-semibold text-[#00303C] my-3">Add new emoji 😃</div>
+                <div class="text-sm text-gray-600 py-6 text-center w-72 bg-white">Debug using Chrome DevTools, check for overlapping...</div>
+                <div class="mt-4 flex justify-between items-center">
+                    <div class="text-sm">Deadline<br>21 March 2025</div>
+                    <div>
+                        <button id="comp" class="bg-[#3752FD] hover:bg-[#000000] text-white py-1 px-3 rounded-full text-xs font-semibold" 
+                          onclick="console.log('Button clicked!')">
+                          Completed
+                        </button>
+                      </div>
+                
+                </div>
+            </div>
+            <div class="border rounded-lg p-4 bg-[#F4F7FF]">
+                <div class="font-bold bg-[#ffffff] p-1 w-32 text-center  rounded-md">Google LLC</div>
+                <div class="text-lg font-semibold text-[#00303C] my-3">Integrate OpenAI API</div>
+                <div class="text-sm text-gray-600 py-6 text-center w-72 bg-white">Debug using Chrome DevTools, check for overlapping...</div>
+                <div class="mt-4 flex justify-between items-center">
+                    <div class="text-sm">Deadline<br>21 March 2025</div>
+                    <div>
+                        <button id="comp" class="bg-[#3752FD] hover:bg-[#000000] text-white py-1 px-3 rounded-full text-xs font-semibold" 
+                          onclick="console.log('Button clicked!')">
+                          Completed
+                        </button>
+                      </div>
+                </div>
+            </div>
+            
+            <div class="border rounded-lg p-4 bg-[#F4F7FF]">
+                <div class="font-bold bg-[#ffffff] p-1 w-24 text-center rounded-md">Glassdoor</div>
+                <div class="text-lg font-semibold text-[#00303C] my-3">Improve Job searching</div>
+                <div class="text-sm text-gray-600 py-6 text-center w-72 bg-white">Debug using Chrome DevTools, check for overlapping...</div>
+                <div class="mt-4 flex justify-between items-center">
+                    <div class="text-sm">Deadline<br>21 March 2025</div>
+                    <div>
+                        <button id="comp" class="bg-[#3752FD] hover:bg-[#000000] text-white py-1 px-3 rounded-full text-xs font-semibold" 
+                          onclick="console.log('Button clicked!')">
+                          Completed
+                        </button>
+                      </div>                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- activity -->
+    <div class="bg-[#F4F7FF] mt-13 p-6 rounded-lg  w-[300px]">
+        <div class="flex gap-4 items-center mb-4">
+            <img src="assets/activity.png" alt="">
+            <h3 class="font-bold text-lg">Activity Log</h3>
+            
+        </div>
+        <button class="bg-[#3752FD] text-[#ffffff] rounded-full px-3 py-1 text-sm font-semibold">Clear History</button>
+        <div class="text-sm text-gray-600 space-y-3">
+            <div class="py-2">
+                You have Complete The Task Add
+                <div class="font-semibold text-black">Dark Mode at 12:48:15 PM</div>
+            </div>
+
+            </div>
+    </div>
+  </div>
+
+
+  <script src="script/newpage.js"></script>
+  <script src="script/date.js"></script>
+</body>
+</html>

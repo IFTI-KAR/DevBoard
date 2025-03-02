@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV-Board</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+    .poppins{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }    
+
+
+    </style>
+</head>
+<body class="poppins">
+    <div class="navbar bg-base-100 shadow-sm mt-2 mx-auto">
+        <div class="flex-1">
+          <div class="flex">
+          <img src="assets/logo.png" alt="">    
+          <a class="btn btn-ghost text-xl poppins ">Dev<span class="poppins text-2xl font-bold">Board</span></a>
+          </div>
+        </div>
+        <div id="hudai">
+            <button id="back" class="bg-violet-900 text-white p-3">Back to Desk</button>
+        </div>
+      </div>
+
+
+      <!-- ----- -->
+      <section>
+        <h1 class="text-center mt-10 font-bold text-2xl">Blogs</h1>
+        <div class="bg-red-100 mx-auto w-450 px-6 py-4 mt-4">
+            <h3 class=" font-semibold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p>You can select elements using methods like getElementById, getElementsByClassName, getElementsByTagName, and querySelector/querySelectorAll.
+                These methods allow you to target elements based on their ID, class, tag name, or CSS selectors.</p>
+        </div>
+        <div class="bg-red-100 mx-auto w-450 px-6 py-4 mt-4">
+            <h3 class=" font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <p>innerHTML gets or sets the HTML content within an element, including HTML tags. innerText gets or sets the visible text content, respecting rendered styles.
+                textContent gets or sets all text content, including hidden text, without parsing HTML.</p>
+        </div>
+        <div class="bg-red-100 mx-auto w-450 px-6 py-4 mt-4">
+            <h3 class=" font-semibold text-xl">Question-3: What is event delegation in the DOM?</h3>
+            <p>Event delegation involves attaching a single event listener to a parent element to handle events for all its descendant elements.
+                This approach improves performance by reducing the number of event listeners needed.</p>
+        </div>
+        <div class="bg-red-100 mx-auto w-450 px-6 py-4 mt-4">
+            <h3 class=" font-semibold text-xl">Question-4: What is event bubbling in the DOM?</h3>
+            <p>Event bubbling is the process where an event triggered on a child element propagates up to its parent elements in the DOM tree.
+                This allows parent elements to handle events that occur on their children.</p>
+        </div>
+        <div class="bg-red-100 mx-auto w-450 px-6 py-4 mt-4">
+            <h3 class=" font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <p>You create elements with document.createElement(), add them with appendChild(), and remove them with removeChild().
+                These methods enable dynamic manipulation of the DOM structure.</p>
+        </div>
+
+    </section>
+    <script src="script/newpage_2.js"></script>
+</body>
