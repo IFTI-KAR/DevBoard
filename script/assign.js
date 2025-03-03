@@ -29,6 +29,8 @@ document.querySelectorAll('#comp').forEach(button => {
             const taskName = button.closest('.border').querySelector('#task').innerText;
 
             const p = document.createElement("p");
+            p.classList.add("mt-4", "p-3", "bg-gray-200", "rounded", "text-sm", "font-medium");
+             
             p.innerText = `You have completed the task: ${taskName}  at ${currentTime}`;
 
             
