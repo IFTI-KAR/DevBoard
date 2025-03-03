@@ -15,8 +15,14 @@ document.querySelectorAll('#comp').forEach(button => {
         if (assignedCount>0) {
             assignedCount-=1;
             tasksDoneCount+=1;
+            alert("Board updated successfully")
             assignedElement.innerText=assignedCount;
+            if (assignedCount==0){
+                alert("congrats!!! you have completed all the current task")
+            }
+
             done.innerText=tasksDoneCount;
+
 
             //history
             const currentTime = getCurrentTime();
@@ -39,31 +45,31 @@ document.querySelectorAll('#comp').forEach(button => {
 });
 
 function getCurrentTime() {
-    const now = new Date();
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    const now=new Date();
+    let hours=now.getHours();
+    let minutes=now.getMinutes();
+    let seconds=now.getSeconds();
     let ampm;
 
     
-    if (hours >= 12) {
-        ampm = 'pm';
+    if (hours>=12) {
+        ampm='pm';
     } else {
-        ampm = 'am';
+        ampm='am';
     }
 
     
-    if (hours === 0) {
-        hours = 12; 
+    if (hours===0) {
+        hours=12; 
     } else {
-        hours = hours % 12;
+        hours=hours%12;
     }
-    if (minutes < 10) {
-        minutes = '0' + minutes;
+    if (minutes<10) {
+        minutes='0' + minutes;
     }
 
-    if (seconds < 10) {
-        seconds = '0' + seconds;
+    if (seconds<10) {
+        seconds='0'+seconds;
     }
     return `${hours}:${minutes}:${seconds} ${ampm}`;
 }
